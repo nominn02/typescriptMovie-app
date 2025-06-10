@@ -1,11 +1,11 @@
 
-import { Movie } from "@/types";
+import { MovieDetails } from "@/types";
 import { Star } from "lucide-react";
 import Link from "next/link";
 
 
 type MovieCardProps = {
-    movie: Movie,
+    movie: MovieDetails,
     id: number
 }
 
