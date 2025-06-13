@@ -15,7 +15,7 @@ export const MovieCard = ({ movie, id}: MovieCardProps) => {
   }`;
 
   return (
-    <div className="rounded-lg w-fit overflow-hidden">
+    <div className="rounded-lg w-fit overflow-hidden bg-[#F4F4F5] rounded-lg ">
       <div className="w-[158px] md:w-[230px] h-[234px] md:h-[340px]">
         <Link href={`/details/${id}`}>
           <img className="object-cover h-full w-full" src={poster} />

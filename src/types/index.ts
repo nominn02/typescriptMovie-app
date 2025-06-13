@@ -78,5 +78,7 @@ export type Movie = {
 };
 
 export type MovieId = {
-  movieId: number;
+id: number;
+  name: string;
+  key: string;
 };

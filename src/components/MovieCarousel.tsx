@@ -7,10 +7,10 @@ import {
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 
-import { MovieCarouselItem } from "./MovieCarouselItem";
 import { useEffect, useState } from "react";
 import { getNowPlayingMovies } from "@/utils/getPlayingNow";
 import { MovieDetails } from "@/types";
+import { MovieCarouselItem } from "./MovieCarouselItem";
 
 
 export const MovieCarousel = () => {
@@ -39,7 +39,7 @@ const [nowPlayingMovie, setNowPlayingMovie] = useState<MovieDetails[]>([]);
         {nowPlayingMovie?.map((movie) => (
           <CarouselItem key={movie.id}>
             <div className="p-1">
-              <MovieCarouselItem movie={movie} />
+              <MovieCarouselItem movie={movie} id={movie.id}/>
             </div>
           </CarouselItem>
         ))}

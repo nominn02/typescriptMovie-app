@@ -8,7 +8,7 @@ import { Upcoming } from "@/components/Upcoming";
 
 const Home = () => {
   return (
-    <div className="w-full lg:max-w-[1278px] mx-auto" >
+    <div className="w-full lg:max-w-[1278px] mx-auto container" >
       <MovieCarousel/>
       <Upcoming/>
       <Popular/>
