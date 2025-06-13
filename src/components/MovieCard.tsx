@@ -9,7 +9,7 @@ type MovieCardProps = {
     id: number
 }
 
-export const MovieCard = ({ movie, id }: MovieCardProps) => {
+export const MovieCard = ({ movie, id}: MovieCardProps) => {
   const poster = `${process.env.NEXT_PUBLIC_TMDB_IMAGE_SERVICE_URL}${
     movie?.poster_path
   }`;
